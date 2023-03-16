@@ -108,6 +108,14 @@ app.post("/register", async (req, res) => {
   }
 });
 
+app.post('/login', (req, res)=>{
+    //validate the data
+    //what is loginId (email, username)
+    //find the user with loginId
+    //password compare bcrypt.compare
+    //is everything works fine, then user is login
+})
+
 app.listen(PORT, () => {
   console.log(clc.yellow.bold(`Server is running`));
   console.log(clc.yellow.bold.underline(`http://localhost:${PORT}`));
